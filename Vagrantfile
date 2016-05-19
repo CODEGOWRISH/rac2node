@@ -75,10 +75,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
           # ASM Disks for data/fra disk groups
           asm_disk_count=3
-          file_name_pattern='C:\Users\dbgsm0\VirtualBox VMs\VMDisks\rac2-asm'
+          file_name_pattern='C:\Users\username\VirtualBox VMs\VMDisks\rac2-asm'
           file_type='vmdk'
 
-          #file_name= 'C:\Users\dbgsm0\VirtualBox VMs\VMDisks\rac2-asm1.vmdk'
+          #file_name= 'C:\Users\username\VirtualBox VMs\VMDisks\rac2-asm1.vmdk'
 
           (1..asm_disk_count).each do |disk|
 
@@ -138,7 +138,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
           # ASM Disks for data/fra disk groups
           asm_disk_count=3
-          file_name_pattern='C:\Users\dbgsm0\VirtualBox VMs\VMDisks\rac2-asm'
+          file_name_pattern='C:\Users\username\VirtualBox VMs\VMDisks\rac2-asm'
           file_type='vmdk'
 
           (1..asm_disk_count).each do |disk|
@@ -156,7 +156,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
           end
 
           # EXAMPLE DISK-ADD BEGIN (KEEP THIS COMMENTED)
-          #file_to_disk = 'C:\Users\dbgsm0\VirtualBox VMs\VMDisks\rac2-asm1.vmdk'
+          #file_to_disk = 'C:\Users\username\VirtualBox VMs\VMDisks\rac2-asm1.vmdk'
 
           #unless File.exist?(file_to_disk)
             #v.customize ['createhd', '--variant', 'Fixed', '--filename', file_to_disk, '--size', 1 * 1024]
